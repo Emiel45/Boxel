@@ -5,7 +5,6 @@ Boxel is a near real-time pixelator and Minecraft codec.
 Usage
 ======
 Boxel pixelates images, websites and video at 24fps.
-You can use the PNG 
 
 Getting Started
 ================

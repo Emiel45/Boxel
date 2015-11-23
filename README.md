@@ -69,10 +69,11 @@ boxel -W 50 -C palettes/5bit.yml video -R redis://localhost:6379/0 -U ws://local
 Demo app
 --------
 The best place to start with Boxel is probably the [demo app](https://github.com/VerizonCraft/Boxel-demo).
-It includes docker containers PhantomJS, Boxel, Redis, and an example web front-end that will get you a
-running Boxel service with just a few commands.
 
-See [Boxel-client](https://github.com/VerizonCraft/Boxel-client) for an examples of video and website rendering in Minecraft.
+It provides docker containers for PhantomJS, Crossbar, Boxel, Redis, and an example web front-end that will get you a
+Boxel service with just a few commands.
+
+See [Boxel-client](https://github.com/VerizonCraft/Boxel-client) for examples of video and website rendering in Minecraft.
 
 Contribute
 ===========

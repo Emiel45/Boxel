@@ -63,7 +63,7 @@ Run it!
 Assuming you've got Redis, Phantom and a Crossbar router running you should be able to start the Boxel service like so:
 ```bash
 # substitute the correct host/port for your redis server and crossbar router
-boxel -W 50 -C palettes/5bit.yml video -R redis://localhost:6379/0 -U ws://localhost:8080/ws"
+boxel -W 50 -C palettes/5bit.yml video -R redis://localhost:6379/0 -U ws://localhost:8080/ws
 ```
 
 Demo app

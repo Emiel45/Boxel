@@ -43,12 +43,27 @@ brew install redis
 sudo apt-get install redis-server
 ```
 
+Finally, Boxel requires a WAMP router for service discovery. We use [crossbar](http://crossbar.io).
+Crossbar can be installed via pip:
+
+```bash
+pip install crossbar
+```
+
 Installation
 ------------
-After you've installed Phantom, install boxel and it's depencies like any other Python package:
+After you've installed these dependencies, install boxel like any other Python package:
 ```bash
 # using pip
 pip install -e https://github.com/VerizonCraft/Boxel.git#egg=boxel
+```
+
+Run it!
+-------
+Assuming you've got Redis, Phantom and a Crossbar router running you should be able to start the Boxel service like so:
+```bash
+# substitute the correct host/port for your redis server and crossbar router
+boxel -W 50 -C palettes/5bit.yml video -R redis://localhost:6379/0 -U ws://localhost:8080/ws"
 ```
 
 Demo app
@@ -57,6 +72,7 @@ The best place to start with Boxel is probably the [demo app](https://github.com
 It includes docker containers PhantomJS, Boxel, Redis, and an example web front-end that will get you a
 running Boxel service with just a few commands.
 
+See [Boxel-client](https://github.com/VerizonCraft/Boxel-client) for an examples of video and website rendering in Minecraft.
 
 Contribute
 ===========
@@ -64,5 +80,5 @@ If you'd like to contribute, check out the [contributing guidelines](https://git
 
 License
 ===========
-This repository and its code are licensed under a BSD 3-Clause license, which can be found [here](https://github.com/VerizonCraft/Boxel/blob/master/LICENSE).
+This repository and its code are made available under a BSD 3-Clause license, which can be found [here](https://github.com/VerizonCraft/Boxel/blob/master/LICENSE).
 
